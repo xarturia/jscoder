@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+</head>
+<body>
+
+     <!-- Script entre etiquetas dentro del HTML -->
+     <script>
+
+        //Aca va el codigo --> comentario inline
+
+        /*
+        Linea 1
+        Ejemplo de comentario en bloque
+        Detalle blabla
+        */       
+
+     </script>
+    
+    
+    <!-- Reglas:  
+      * No se consideran espacios en blanco y nuevas lineas 
+      * Case Sensitive: diferenciar minusculas y mayusculas: demostrar con el uso de variables
+      * Comentarios inline y comentarios en bloques
+    -->
+    
+    
+
+
+    <!-- Dentro del script declarar variables con var, let y const. aclarar diferencia entre regla de sintaxis y buenas practicas. CamelCase. Mayusculas en const  -->
+    <script>
+        
+        //Declaración de variable ES5. 
+        var nombreVariable1;
+    
+        //Declaración de variable ES6.
+        let   nombreVariable2;
+
+        //Constante --> no cambia en ningun momento dentro del programa
+        const LENGUAJE = "JAVASCRIPT";
+
+    </script>
+    <!-- Asignar Valores a variables: Number y String. Explicar asignacion vs inicializacion -->
+    
+    <script>
+        let variableNumerica;
+        var variableTexto = "Texto";
+        
+        variableNumerica = 5;
+        variableTexto = "Mi texto";
+        variableTexto = 'Mi texto';
+    </script>
+        
+
+    <!-- Ejemplo de operaciones basicas con numeros: suma, resta, multiplicacion, division, resto -->
+
+    <script>
+        var   numeroA = 1;
+        let   numeroB = 2;
+        const NUMEROC = 3;
+        //Suma  de dos números (1 + 2 = 3)
+        let resultadoSuma  = numeroA + numeroB;
+        //Resta de dos números (2 - 1 = 1)
+        let resultadoResta = numeroB - numeroA;
+        //Producto de dos números (2 * 3 = 6)
+        let resultadoProducto = numeroB * NUMEROC;
+        //Division
+        let resultadoDivision = NUMEROC / numeroA;
+        //Resto
+        let resultadoResto = NUMEROC % numeroA;
+
+    </script>
+    <!-- Ejemplo de operacion de strings: contatenar valores y variables. -->
+
+    <script>
+        var   textoA = "CODER";
+        let   textoB = "HOUSE";
+        const BLANCO = " ";
+        //Concatenar textoA y textoB ("CODER" + "HOUSE" = "CODERHOUSE")
+        let resultadoA = textoA + textoB;
+        //Concatenar textoB y 1 ("HOUSE" + 1 = "HOUSE1")
+        let resultadoB = textoB + 1;
+        //Concatenar textoA, BLANCO y textoB ("CODER" + " " + "HOUSE" = "CODER HOUSE")
+        let resultadoC = textoA + BLANCO + textoB;
+    </script>
+
+
+    <!-- Contactenar number y string y ver resultado  -->
+
+
+    <!-- Uso de prompt() -->
+   <!--  <script>
+        let nombreIngresado = prompt("Ingrese su nombre");
+        // uso de la consola desde las sentencias en JS
+        console.log("Hola esto es un mensaje desde JS a la consola");
+        console.log("Variable nombreIngresado: " + nombreIngresado);
+        //Alert
+        alert("Hola " + nombreIngresado + "!");
+    </script> -->
+    
+
+    <!-- ALGORITMO -->
+    <!-- Conjunto de procedimientos, sentencias, operaciones o funciones ordenados necesarios para realizar una operación o acción. Por ejemplo  
+      Algoritmo Suma: 
+        1) tomar numero 1
+        2) tomar numero 2
+        3) sumar numero 1 y numero 2  
+        4) visualizar resultado. -->
+    
+        <!-- Ejemplo toma de lado a y lado b de rectangulo para calculo de area, visualizar operaciones intermedias en consola y resultado final con alert -->
+
+        <script>
+            //ALGORIMO para CALCULO DE AREA DE RECTANGULO
+            var ladoA = parseInt(prompt("Ingresar Lado A(en cm):"));
+            console.log("Lado A:" + ladoA);
+            var ladoB = prompt("Ingresar Lado B(en cm):");
+            console.log("Lado B:" + ladoB);
+            var resultado = ladoA * ladoB;
+            alert("Area de Rectangulo:" + resultado + " cm2");
+
+            //Perimetro de rectangulo
+            var perimetro = parseInt(ladoA) + parseInt(ladoA) + parseInt(ladoB) + parseInt(ladoB);
+            alert("Perimetro: " + perimetro);
+        </script>
+
+    <!-- Script referenciado a un archivo .js -->
+    <!-- Crear y Usar carpeta "js" o "script" para guardar nuestros scripts -->
+    <!--<script src="js/script.js"></script>-->
+</body>
+</html>
