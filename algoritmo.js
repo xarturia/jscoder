@@ -13,7 +13,7 @@
             No tiene beca       
         */
 
-            let nota = 7;
+            let nota = 1;
             let referenciaDocente = false;
             let aproboTrabajos = true;
             let recomendadoTutor = false;
