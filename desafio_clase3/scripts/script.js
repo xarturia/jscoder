@@ -1,4 +1,4 @@
-// Multiplicar dos números
+/* // Multiplicar dos números
 let n = parseInt(prompt('Ingrese un número'));
 let m = parseInt(prompt('Ingrese el multiplicador'));
 
@@ -19,15 +19,14 @@ while (peso && estatura > 0 && estatura < 300) {
         'índice de Masa corporal: ' + imc);
     peso = parseInt(prompt('Ingrese su peso en kilogramos: '));
     estatura = parseInt(prompt('Ingrese su estatura en centímetros: '));
-}
+} */
 
 
 // Quiz
 alert('¿Cuál es la capital de EEUU?');
 let answer = prompt('Introduzca su respuesta');
-let correctAns = 'Washington D.C.';
-const invalidAns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-while (answer != invalidAns[i]) {
+let correctAns = ['Washington D.C.', 'Washington D.C', 'Washington DC'];
+while (isNaN(answer)) {
     switch (answer) {
         case 'Washington':
             alert('Tu respuesta es correcta!');
@@ -43,7 +42,10 @@ while (answer != invalidAns[i]) {
             break;
         default:
             alert('Hoy toca estudiar Geografía eh...\n' +
-                'La respuesta correcta es: ' + correctAns);
+                'La respuesta correcta es: ' + correctAns[0] +
+                '\n\n También es correcto:' +
+                '\n• ' + correctAns[1] +
+                '\n• ' + correctAns[2]);
             break;
     }
     alert('¿Cuál es la capital de EEUU?');
