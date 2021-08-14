@@ -2,17 +2,20 @@ class user {
     constructor(username, password) {
         this.username = username;
         this.password = password;
+        // Función para verificar que los datos ingresados no estén vacíos.
+        // Cambia el estado de inicio a true si los datos son correctos.
         this.inicio = function () {
             if (this.username != "" && this.password != "") {
                 this.inicio = true;
                 console.log('Sesión iniciada: ' + this.inicio);
-                console.log('Fecha de acceso: '); fecha()
+                console.log('Fecha de acceso: '); + fecha()
             } else if (this.username == "" && this.password == "") {
                 this.inicio = false;
                 console.log('Sesión iniciada: ' + this.inicio);
             }
         };
     }
+    // El método login también verifica que no se hayan ingresado datos vacíos y dá un mensaje al usuario.
     login() {
         if (this.username != "" && this.password != "") {
             console.log('Hola ' + this.username + '! Bienvenido nuevamente.' +
@@ -21,10 +24,11 @@ class user {
             console.log('Los datos ingresados son inválidos, ingréselos nuevamente');
         }
     }
+    // Muestra un registro de la clase user y los datos del inicio de sesión.
     viewlog() {
-        console.log(this);
         console.log('Usuario: ' + this.username + '\n' +
             'Contraseña: ' + this.password + '\n');
+        console.log(this);
     }
 }
 addUser();
@@ -36,7 +40,7 @@ function fecha() {
     var dateTime = date + ' ' + time;
     console.log(dateTime);
 }
-//añadir usuario
+//Añadir usuario
 function addUser() {
     const usr = prompt('user');
     const pwd = prompt('password');
@@ -44,7 +48,7 @@ function addUser() {
     newUser.login();
     newUser.inicio();
     newUser.viewlog();
-    console.log('- - - - - - - - - - - -');
+    console.log('- - - - - - - - - - - - - -');
 }
 /*
 const user2 = new user('', '');
