@@ -1,4 +1,4 @@
-/* //Creamos un objeto producto
+//Creamos un objeto producto
 const producto1 = { id: 1, nombre: "Arroz"};
 //Creamos un array de productos
 const listaProductos = [producto1, { id: 2, nombre: "Fideo"}];
@@ -12,9 +12,9 @@ console.log(listaProductos.join("|"));
 for (const producto of listaProductos){
     console.log("Id:" + producto.id + " - Producto : " + producto["nombre"]);
 
-}
+} 
 
- */
+
 
 
 //USANDO TYPEOF

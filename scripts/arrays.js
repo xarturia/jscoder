@@ -8,7 +8,7 @@ const listaStrings = ["String1", "String2", "String3"];
 const listaBooleans = [true, false,false,true];
 //Lista de elementos mixta
 const listaMixto = [35, "Cualquier texto", true];
-/*
+
 //Accediendo a elementos del lista
 
 console.log(listaNumeros[0] + listaNumeros[1] + listaNumeros[2] + listaNumeros[3]);
@@ -30,7 +30,7 @@ for (let index = 1;index < 3; index++ ){
 for (let index = 0;index < listaStrings.length; index++ ){
     console.log("Elemento " + index + ":" + listaStrings[index]);
 }
- */
+ 
 //USANDO TOSTRING
 console.log(listaMixto.toString() + " - Cantidad : " + listaMixto.length); 
 //USANDO PUSH
