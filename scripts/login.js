@@ -22,7 +22,8 @@ const username = document.getElementById("inputUsername"); // user
 const password = document.getElementById("inputPassword"); // pass
 // useragent
 let ua = navigator.userAgent;
-function get_userAgent(){
+
+function get_userAgent() {
     localStorage.setItem('userAgent', ua);
     let userAgent = localStorage.getItem('userAgent');
     console.log(userAgent);
@@ -78,10 +79,12 @@ signInForm.addEventListener("submit", (e) => {
         errorElement.innerText = messages.join('\n ');
     } else(validation = true); // Si todo está correcto, validado = true
     errorDiv.style.display = 'flex'; // Muestro el div oculto si hay algún mensaje de error
+    
+    sessionStorage.setItem('isValidated', validation);
+    let validated = sessionStorage.getItem(validation);
 
     messages.push(`Welcome ${username.value}`);
     console.log(`password is ${password.value.length} characters length\nValidation: ${validation.toString()}`);
-    console.log(messages.join('\n').toString());
-    sessionStorage.setItem('validation', validation);
-    sessionStorage.getItem(validation);
+    console.log(`Messages:\n${messages.join('\n').toString()}`);
+
 })
