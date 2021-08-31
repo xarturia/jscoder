@@ -24,7 +24,7 @@ addButton.addEventListener('click', () => {
         `<div class="profile__name">${names[i]}</div>\n` +
         `<div class="profile__title">${title[i]}</div>\n` +
         `<div class="profile__detail">\n
-            <i class="material-icons">person</i>${followers[i]}\n
+            <i class="material-icons">person</i>${followers[i]} followers\n
         </div>`;
     i++;
     container.appendChild(newUser);
