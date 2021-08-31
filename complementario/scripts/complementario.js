@@ -15,6 +15,7 @@ addButton.addEventListener('click', () => {
     console.log(i);
     console.log(names)
     if (i >= names.length) { // Aca deberia de parar al llegar a 4
+        alert('Límite de usuarios alcanzado');
         return;
     }
     const newUser = document.createElement('div');
