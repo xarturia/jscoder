@@ -20,14 +20,21 @@ sign_in_btn.addEventListener("click", () => {
 const loginButton = document.querySelector(".loginButton");
 const username = document.getElementById("inputUsername"); // user
 const password = document.getElementById("inputPassword"); // pass
+// useragent
+let ua = navigator.userAgent;
+function get_userAgent(){
+    localStorage.setItem('userAgent', ua);
+    let userAgent = localStorage.getItem('userAgent');
+    console.log(userAgent);
+}
+get_userAgent();
+// class usuario
 class user {
     constructor(username, password) {
         this.username = username;
         this.password = password;
-        // Eventos a realizar al hacer click sobre el botón de logueo
     }
 }
-
 // Guardar temporalmente el usuario y contraseña ingresados
 loginButton.addEventListener("click", () => {
     sessionStorage.setItem('username', username.value);
@@ -41,7 +48,6 @@ function loginAction() {
     let pwd = document.getElementById("inputPassword");;
     new user(usr, pwd); //creación de usuario nuevo
 }
-
 
 const errorElement = document.getElementById('error'); // Obtengo el div error
 const signInForm = document.querySelector('.sign-in-form'); // Obtengo el formulario de inicio de sesión
@@ -76,4 +82,6 @@ signInForm.addEventListener("submit", (e) => {
     messages.push(`Welcome ${username.value}`);
     console.log(`password is ${password.value.length} characters length\nValidation: ${validation.toString()}`);
     console.log(messages.join('\n').toString());
+    sessionStorage.setItem('validation', validation);
+    sessionStorage.getItem(validation);
 })
