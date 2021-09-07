@@ -19,13 +19,11 @@ let regEmail = $('#registerMail'); // mail
 $(document).ready(function () {
     // useragent
     let ua = navigator.userAgent;
-
-    function get_userAgent() {
+    (function () {
         localStorage.setItem('userAgent', ua);
         let userAgent = localStorage.getItem('userAgent');
         console.log(userAgent);
-    }
-    get_userAgent();
+    })();
 });
 
 // class usuario
@@ -67,16 +65,30 @@ const errorDiv = $('.errorContainer'); // div con estilos,elemento padre de los 
 sign_up_btn.click(() => {
     // añado la clase al contenedor
     $(container).addClass('sign-up-mode');
-    errorDiv.css('display', 'none');
+    $(errorDiv).hide();
+    clearField(true, false);
 });
 
 // cuando clickee en el boton de registro:
 sign_in_btn.click(() => {
     // quito la clase al contenedor
     $(container).removeClass('sign-up-mode');
-    errorDiv.css('display', 'none');
+    $(errorDiv).hide();
+    clearField(false, true);
 });
 
+// limpiar inputs
+function clearField(campoLogin, campoRegister) {
+    if (campoLogin = true) {
+        $(username).val(null);
+        $(password).val(null);
+    }
+    if (campoRegister = true) {
+        $(regUsr).val(null);
+        $(regPass).val(null);
+        $(regEmail).val(null);
+    }
+}
 // Formulario de inicio de sesión
 $(signInForm).submit((e) => {
     let messages = [];
@@ -105,14 +117,13 @@ $(signInForm).submit((e) => {
         errorDiv.css('display', 'flex'); // Muestra el div oculto si hay algún mensaje de error
     } else(validation = true); // Si todo está correcto, validado = true
 
-
     sessionStorage.setItem('isValidated', validation);
     let validated = sessionStorage.getItem(validation);
 
     messages.push(`Username field: '${username.val()}'`);
     console.log(`password is ${password.val().length} character(s) length\nValidation: ${validation.toString()}`);
     console.log(`Messages:\n${messages.join('\n').toString()}`);
-
+    clearField(true, false);
 });
 
 // formulario de registro

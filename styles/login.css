@@ -23,7 +23,7 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--black);
   min-height: 100vh;
   overflow: hidden;
 }
@@ -95,7 +95,7 @@ form.sign-in-form {
 
 .title {
   font-size: 2.2rem;
-  color: #444;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -138,6 +138,7 @@ form.sign-in-form {
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
+  color: #fff;
 }
 
 .social-media {
@@ -152,9 +153,9 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #333;
+  color: #fff;
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid #fff;
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
@@ -162,8 +163,8 @@ form.sign-in-form {
 
 .social-icon:hover {
   background-image: linear-gradient(90deg, var(--lightred), var(--lightcoral));
-  border-color: #fff;
-  color: #fff;
+  border-color: var(--black);
+  color: var(--black);
 }
 
 .btn {
