@@ -1,0 +1,47 @@
+/* Back to top button */
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 62px;
+  height: 62px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  border-radius: 50%;
+
+  &:hover {
+    background: #e9ebec;
+  }
+
+  .bttSpan {
+    color: #ED176F;
+    &:hover{
+      color: #cc1863;
+    }
+  }
+
+  .fa-arrow-circle-up {
+    align-items: center;
+    align-content: center;
+    height: 30px !important;
+    width: 30px !important;
+    font-size: xx-large;
+    margin-top: 15px;
+  }
+}
+
+#back-to-top.show {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "xarturia-final-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/style.scss styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xarturia/jscoder.git"
+  },
+  "author": "Xarturia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xarturia/jscoder/issues"
+  },
+  "homepage": "https://github.com/xarturia/jscoder#readme"
+  
+}

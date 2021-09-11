@@ -50,15 +50,34 @@
 
 </head>
 
-<body>
+<body class="lightmode">
     <!-- header start  -->
     <header>
+        <button href="#" id="darkmodeBtn" title="dark mode">
+            <div class="fas fa-moon" id="darkmodeSpan"></div>
+        </button>
         <!-- botón para subir -->
         <a href="#" id="back-to-top" title="Back to top">
             <div class="bttSpan fas fa-arrow-circle-up"></div>
         </a>
-        <a href="#" class="logo">Xarturia</a>
+        <!-- Logo -->
+        <div id="logocontainer">
+            <a href="index.html" class="logo"><span class="typed"></span></a>
+        </div>
+        <!-- Typed effect -->
+        <div id="cadenas-texto">
+            <a href="#" class="logotext">
+                <span class="typed_2">Xarturia</span>
+            </a>
 
+            <a href="#" class="logotext">
+                <span class="typed_2">Anime</span>
+            </a>
+
+            <a href="#" class="logotext">
+                <span class="typed_2">Streaming</span>
+            </a>
+        </div>
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <nav class="navbar">
@@ -69,7 +88,7 @@
             <a href="#review">opiniones</a>
             <a href="#pricing">Precios</a>
             <a href="#contact">contacto</a>
-            <a href="login.html" id="loginKey">Iniciar Sesión</a>
+            <a href="login.html" id="loginKey" class="fas fa-sign-in-alt"></a>
         </nav>
 
     </header>
@@ -85,7 +104,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima labore similique eos harum atque omnis ex
                 consectetur, assumenda sunt ad facilis illum quaerat doloremque. Aut eveniet culpa enim suscipit ullam!
             </p>
-            <a href="#" class="btn">Empieza ahora</a>
+            <a href="#pricing" class="btn">Empieza ahora</a>
         </div>
 
         <div class="swiper-container image-slider">
@@ -385,12 +404,20 @@
     <!-- script part  -->
     <!-- JQuery -->
     <script src="libs/jquery-3.6.0.min.js"></script>
+    <!-- typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- typed config -->
+    <script src="scripts/typed.js"></script>
     <!-- swipper lib -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- swipper -->
     <script src="scripts/swipper.js"></script>
     <!-- back to top button -->
     <script src="scripts/backtotopbtn.js"></script>
+    <!-- darkmode -->
+    <script src="scripts/darkmode.js"></script>
+    <!-- main script -->
+    <script src="scripts/mainpage.js"></script>
 
 </body>
 

@@ -1,0 +1,14 @@
+/* Darkmode */
+/* darkmode button */
+#darkmodeBtn {
+    background-color: #e9eaeb;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: #3d424f;
+    };
+};

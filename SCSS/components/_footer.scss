@@ -1,0 +1,43 @@
+/* inicio Sección de footer */
+.footer {
+    text-align: center;
+    background: var(--black);
+
+    .share a {
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        background: #eee;
+        color: var(--black);
+        border-radius: 50%;
+        font-size: 2rem;
+        margin: .3rem;
+
+        &:hover {
+            color: #fff;
+            background: var(--gradient);
+        }
+    }
+
+    h1.credit {
+        color: #eee;
+        padding: 2.5rem 1rem;
+        font-weight: normal;
+        font-size: 2rem;
+
+        span {
+            color: var(--red);
+        }
+
+        .createdby {
+            text-decoration: none;
+            color: #ED176F;
+
+            &:hover {
+                color: #f2408a;
+            }
+        }
+    }
+}
+
+/* fin sección de footer */

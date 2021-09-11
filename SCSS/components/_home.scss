@@ -1,0 +1,46 @@
+/* Sección Home */
+.home {
+    background: url('/images/index/home-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+
+    .content {
+        padding-top: 5rem;
+        max-width: 70rem;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 6.5rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: #eee;
+            padding: 1rem 0;
+        }
+    }
+
+    /* swipper */
+    .swiper-container {
+        width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                width: 30rem;
+                height: 50rem;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+/* fin sección home */
