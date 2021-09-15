@@ -31,26 +31,30 @@ $(function () {
                 let url = $('#pokeurl');
                 let expBase = pokemon.base_experience;
                 let ability = pokemon.abilities; //arrays con las habilidades
-                let abilities = () => {
-                    for (let i in ability) {
-                        console.log(ability[i]) //por cada array de habilidades, mostrar en consola
-                    }
-                };;
-                console.log(ability)
+
                 // HTTP REQUEST
                 if (response === 'success') { // en caso de success (200OK)
 
-                    console.log(ability); // muestro array con sus objetos
-                    abilities();
-                    let i;
+                    let showAbilities = () => {
+                        for (let i in ability) {
+                            console.log(ability[i]) //por cada array de habilidades, mostrar en consola
+                        }
+                    };;
+                    showAbilities(); // muestra el array de objetos con las habilidades
+
+
+                    let abilityName = "";
                     // loopeo en 'ability' para poder extraer sólo los nombres
                     for (i = 0; i < ability.length; i++) {
-                        let abilityName = ability[i].ability.name; // busco la key nombre
-                        console.log(abilityName);
+                        // busco la key nombre
+                        if (i + 1 == ability.length) {
+                            abilityName += ability[i].ability.name;
+                        } else {
+                            abilityName += ability[i].ability.name + ', ';
+                        }
                     }
-
                     $('#extrabtn').show().css('display', 'block'); //mostrar botón de detalles
-                    
+
                     $('.hiddenCard').html(`<div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Pokestats</h5>
@@ -58,7 +62,7 @@ $(function () {
                       <p class="card-text">Estadísticas de ${pokeName} [${input.val()}]</p>
                       <ul>
                         <li class="base_exp">Exp. Base: <span class="extraspan">${expBase}</span></li>
-                        <li class="ability">Habilidad: ${ability}<span class="extraspan"></span></li>
+                        <li class="ability">Habilidad: ${abilityName}<span class="extraspan"></span></li>
                         <li class="moves"><span class="extraspan"></span></li>
                     </ul>
                       <a href="#" class="card-link">Pokedex</a>
