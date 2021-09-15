@@ -179,7 +179,15 @@ input[type=number] {
     font-style: italic;
     text-transform: uppercase;
 }
-
+.moreInfo{
+    font-weight: bold;
+}
 .extraspan {
-    color: #4e4376;
+    color: #3165b0;
+    font-weight: bolder;
+    font-family: 'Thasadith', sans-serif;
+}
+.extraName {
+    font-weight: bolder;
+    font-family: 'Thasadith', sans-serif;
 }
