@@ -1,20 +1,5 @@
 $(document).ready(function () {
-    // animación al presionar el header
-    /* let controlador = true;
-    $('header').on('click', function () {
-        if (controlador) {
-            $('header').animate({
-                height: '200px'
-            });
-        } else {
-            $('header').animate({
-                height: '75px'
-            });
-        }
-        controlador = !controlador;
-    }); */
-    // arreglar logo container
-    // Animación para el botón de subir
+    // animación del botón btt
     let giro = true;
     $('#back-to-top').click(function () {
         if (giro) {

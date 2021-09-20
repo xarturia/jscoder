@@ -1,4 +1,53 @@
 /* Darkmode */
+@import '../base/root';
+
+.darkmode {
+    --clr-light: #fdffc4;
+    --clr-dark: #272D3B;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    background: var(--background);
+    color: #fff;
+}
+
+.darkmode_title {
+    color: #fff !important;
+}
+
+.darkmode_text {
+    color: transparent !important;
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+
+    &:hover {
+        background: #fff;
+        -webkit-background-clip: text;
+    }
+}
+
+.darkmode_paragraph {
+    color: transparent !important;
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+}
+
+.usage-text-dark {
+    color: #a09f9f !important;
+    background: none !important;
+    font-weight: bold;
+}
+
+.client_name_dark {
+    color: #e9eaeb !important;
+}
+
 /* darkmode button */
 #darkmodeBtn {
     background-color: #e9eaeb;
@@ -10,5 +59,7 @@
     &:hover {
         color: #fff;
         background-color: #3d424f;
-    };
-};
+    }
+
+
+}

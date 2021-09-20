@@ -1,0 +1,19 @@
+:root { 
+    --black: #272D3B;
+    --red: #ED176F;
+    --coral: #F7817F;
+    --gradient: linear-gradient(90deg, var(--red), var(--coral));
+
+    /* for darkmode */
+    --clr-light: #fdffc4;
+    --clr-dark: #272D3B;
+    --clr-primary: #dbffa2;
+    --clr-secondary: #c3fcf2;
+    --clr-accent: #ff7750;
+  
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+  
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+  }

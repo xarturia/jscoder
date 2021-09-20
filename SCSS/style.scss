@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+@import 'base/root';
 @import 'components/header';
 @import 'components/home';
 @import 'components/backToTopBtn';
 @import 'components/mediaquery';
 @import 'components/footer';
 @import 'components/btn';
+@import 'components/usage';
+@import 'components/contact';
 @import 'components/darkmode';
-:root { 
-  --black: #272D3B;
-  --red: #ED176F;
-  --coral: #F7817F;
-  --gradient: linear-gradient(90deg, var(--red), var(--coral));
-}
+
 
 * {
   font-family: 'Nunito', sans-serif;
