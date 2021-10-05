@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<html prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Encabezados HTTP -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
+    <!-- Description -->
+    <meta name="description"
+        content="Xarturia es una plataforma de streaming de anime, gratuita y con el directorio más grande." />
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="streaming, app, anime streaming, anime, video, anime video, watch anime, watch anime online, series, xarturia, ver anime, ver anime sub esp, anime online, mirar anime, watch anime online, free anime app, anime apk, streamin apk, apk">
+    <!-- Title -->
+    <meta property="og:title" content="Xarturia - Anime streaming app" />
+    <!-- Type -->
+    <meta property="og:type" content="website" />
+    <!-- URL -->
+    <meta property="og:url" content="https://xarturia.github.io/jscoder/" />
+    <!-- IMG -->
+    <meta property="og:image" content="https://i.imgur.com/HpL7TNM.png" />
+    <!-- Lang -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="es_419" />
+    <!-- theme color -->
+    <meta name="theme-color" content="#272d3b">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <!-- Index -->
+    <meta name="robots" content="index, follow">
+    <title>Xarturia - Anime streaming app</title>
+    <!-- Swipper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- FAwesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Ajax css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <!-- Styles  -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="lightmode">
+    <!-- header start  -->
+    <header>
+        <!-- botón para subir -->
+        <a href="#" id="back-to-top" title="Back to top">
+            <div class="bttSpan fas fa-arrow-circle-up"></div>
+        </a>
+        <!-- Logo -->
+        <div id="logocontainer">
+            <a href="index.html" class="logo"><span class="xar-logo"></span></a>
+        </div>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="login.html" id="loginKey" class="fas fa-sign-in-alt"></a>
+        </nav>
+
+    </header>
+    <section class="about" id="about">
+
+        <h1 class="chktitle">Ups! Hubo un error<br> Tu pago fue rechazado</h1>
+
+        <div class="row">
+
+            <div class="image aboutimg">
+                <img src="images/index/error-mock-small.png" alt="app mockup">
+            </div>
+
+            <div class="content">
+                <h3 class="about_title">¿Qué sigue?</h3>
+                <p>Confirma que los datos ingresados sean correctos e ingrésalos nuevamente.
+                   <br> En caso de no poder continuar, contacta a la entidad emisora de tu tarjeta de crédito/débito.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum excepturi alias quas
+                    voluptatibus provident voluptatum sapiente quos enim praesentium?</p>
+                <div class="buttons">
+                    <a href="#"><img src="images/index/google-btn.png" alt=""></a>
+                    <a href="#"><img src="images/index/app-store-btn.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- footer start  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <h1 class="credit"> created by <span><a class="createdby" href="https://github.com/xarturia"
+                    target="_blank">Xarturia</a></span> | © All rights reserved </h1>
+
+    </section>
+
+    <!-- footer end -->
+
+
+
+    <!-- script part  -->
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts/stripe/stripe.js" type="module"></script>
+    <!-- JQuery -->
+    <script src="libs/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

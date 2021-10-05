@@ -9,7 +9,11 @@
 @import 'components/btn';
 @import 'components/usage';
 @import 'components/contact';
+@import 'components/scrollbar';
+@import 'components/pricing';
 @import 'components/darkmode';
+@import 'components/modal_alert';
+@import 'components/success';
 
 
 * {
@@ -42,6 +46,7 @@ html {
 }
 body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section {

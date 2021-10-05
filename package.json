@@ -1,7 +1,6 @@
 {
   "name": "xarturia-final-web",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "sass scss/style.scss styles/style.css --watch"
@@ -15,6 +14,15 @@
   "bugs": {
     "url": "https://github.com/xarturia/jscoder/issues"
   },
-  "homepage": "https://github.com/xarturia/jscoder#readme"
-  
+  "homepage": "https://github.com/xarturia/jscoder#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "keywords": [],
+  "description": ""
 }

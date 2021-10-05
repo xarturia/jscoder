@@ -1,3 +1,7 @@
 cmd.txt
 style_backup.css
 .vscode
+scripts/stripe/keys.js
+node_modules
+.env
+images/index/error-mock.png
