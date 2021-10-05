@@ -97,7 +97,7 @@ header .navbar a#loginKey:hover {
 /* fin sección header */
 /* Sección Home */
 .home {
-  background: url("../../images/index/home-background.jpg") no-repeat;
+  background: url("../images/index/home-background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -134,7 +134,7 @@ header .navbar a#loginKey:hover {
 }
 
 .homeDark {
-  background: url("../../images/index/home-background-dark.jpg") no-repeat !important;
+  background: url("../images/index/home-background-dark.jpg") no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
   min-height: 100vh;
